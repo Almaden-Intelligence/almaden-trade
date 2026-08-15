@@ -84,25 +84,26 @@ strong{font-weight:600}
   padding:78px 0 68px;
   position:relative;
   overflow:hidden;
-  text-align:center; /* FIX */
+  text-align:left; /* FIX */
 }
 .hero .shell{
   position:relative;
   z-index:1;
-  text-align:center; /* FIX */
+  text-align:left; /* FIX */
 }
 .hero h1{
   color:#fff;
-  max-width:48ch; /* FIX */
-  margin-left:auto; /* FIX */
-  margin-right:auto; /* FIX */
+  max-width:none; /* FIX */
+  margin-left:0; /* FIX */
+  margin-right:0; /* FIX */
 }
 .hero .lede{
   color:rgba(255,255,255,.76);
-  margin-top:1.1em;
+  margin-top:1.2em; /* FIX */
   max-width:60ch; /* FIX */
-  margin-left:auto; /* FIX */
-  margin-right:auto; /* FIX */
+  margin-left:0; /* FIX */
+  margin-right:0; /* FIX */
+  text-align:left; /* FIX */
 }
 .facts{
   display:flex;
@@ -110,7 +111,7 @@ strong{font-weight:600}
   margin-top:44px;
   border-top:1px solid rgba(196,192,180,.28);
   flex-wrap:wrap;
-  justify-content:center; /* FIX */
+  justify-content:flex-start; /* FIX */
 }
 
 .fact{
@@ -211,8 +212,4 @@ strong{font-weight:600}
 .qa details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
 .qa summary:hover{color:var(--cobalt)}
 .qa .ans{padding:0 40px 21px 0}
-.qa .ans p{margin:0;color:var(--ink-mid);font-size:.94rem;max-width:62ch}
-
-.contact-grid{display:grid;grid-template-columns:190px 1fr;gap:44px;align-items:start}
-@media (max-width:700px){.contact-grid{grid-template-columns:1fr;gap:30px}}
-.qr{border:1
+.qa .ans
