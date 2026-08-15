@@ -32,7 +32,7 @@ strong{font-weight:600}
 @media (max-width:640px){.shell{padding:0 20px}}
 .label{font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-soft);display:block;margin:0 0 .85em}
 .label-rule{padding-bottom:.7em;border-bottom:1px solid var(--rule);margin-bottom:1.6em}
-.lede{font-size:1.09rem;line-height:1.58;color:var(--ink-mid);max-width:58ch}
+.lede{font-size:1.09rem;line-height:1.58;color:var(--ink-mid);max-width:75ch}
 :focus-visible{outline:2px solid var(--cobalt);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
