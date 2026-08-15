@@ -141,7 +141,7 @@ strong{font-weight:600}
 .sched-group{margin-bottom:52px}
 .sched-group:last-of-type{margin-bottom:0}
 
-.note{border-left:2px solid var(--cobalt);padding:2px 0 2px 22px;margin:30px 0 30px -24px}
+.note{border-left:2px solid var(--cobalt);padding:2px 0 2px 22px;margin:30px 0 30px -34px}
 .note .label{color:var(--cobalt);margin-bottom:.6em}
 .note p{margin:0;color:var(--ink-mid);font-size:.94rem;max-width:60ch}
 .note p + p{margin-top:.7em}
