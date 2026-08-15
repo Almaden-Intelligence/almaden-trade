@@ -1,21 +1,12 @@
-// Mobile nav toggle
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav');
-const navGroups = document.querySelectorAll('.nav-group > button');
-
-if (burger && nav) {
-  burger.addEventListener('click', () => {
-    const expanded = burger.getAttribute('aria-expanded') === 'true';
-    burger.setAttribute('aria-expanded', !expanded);
-    nav.classList.toggle('open');
-  });
-}
-
-// Dropdown menus on mobile
-navGroups.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const parent = btn.parentElement;
-    parent.classList.toggle('open');
+document.addEventListener('DOMContentLoaded',function(){
+  var b=document.querySelector('.burger'),n=document.querySelector('.nav');
+  if(b&&n){b.addEventListener('click',function(){
+    var o=n.classList.toggle('open');
+    b.setAttribute('aria-expanded',o?'true':'false');
+  });}
+  document.querySelectorAll('.nav-group > button').forEach(function(t){
+    t.addEventListener('click',function(e){
+      if(window.innerWidth<=940){e.preventDefault();t.parentElement.classList.toggle('open');}
+    });
   });
 });
-
