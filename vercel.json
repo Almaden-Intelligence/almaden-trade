@@ -1,4 +1,11 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "terminos.almadentrade.com" }],
+      "destination": "/terminos/index.html"
+    }
+  ]
 }
