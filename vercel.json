@@ -5,7 +5,7 @@
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "terminos.almadentrade.com" }],
-      "destination": "/terminos/index.html"
+      "destination": "/terminos/"
     }
   ]
 }
